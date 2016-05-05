@@ -130,6 +130,7 @@ p {
     color: #fff;
     font-weight: 400;
     border-radius: 5px;
+    cursor: pointer;
 }
 /************** feature area css ******************/
 
@@ -312,7 +313,8 @@ p {
     padding: 10px 20px;
     color: #fff;
     margin-top: 13px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    cursor: pointer;
 }
 /************** footer area css ******************/
 
