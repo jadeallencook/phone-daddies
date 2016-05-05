@@ -54,7 +54,12 @@ h6 {
 }
 
 html,
-body {}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
 .section_padding {
     padding: 80px 0px
