@@ -28,51 +28,62 @@
                         </div>
                         <div class="col-lg-2 col-md-3 col-sm-4">
                             <div class="single-footer">
-                                <h4 class="footer-title border-left">Phones</h4>
+                                <h4 class="footer-title border-left">Repair</h4>
                                 <ul class="footer-menu">
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Apple</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>iPhone</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Android</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>iPad</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>iPod</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Google</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>HTC</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>LG</span></a>
                                     </li>
-
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Motorola</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Nokia</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>OnePlus</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Samsung</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Sony</span></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-3 col-sm-4">
                             <div class="single-footer">
-                                <h4 class="footer-title border-left">Repair</h4>
+                                <h4 class="footer-title border-left">Links</h4>
                                 <ul class="footer-menu">
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Repair</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Sell</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Store</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Blog</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>...</span></a>
+                                        <a href="#"><i class="zmdi zmdi-circle"></i><span>Contact</span></a>
                                     </li>
 
                                 </ul>
