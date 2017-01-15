@@ -8,3 +8,5 @@
 <script src="../js/plugins.js"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
 <script src="../js/main.js"></script>
+<!-- include spreadsheets -->
+<script src="../js/tabletop.min.js"></script>

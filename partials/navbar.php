@@ -41,7 +41,7 @@
                             <div class="col-md-2 col-sm-6 col-xs-12">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo/logo.png" alt="main logo">
+                                        <img src="../images/logo/logo-small.png" alt="main logo">
                                     </a>
                                 </div>
                             </div>
