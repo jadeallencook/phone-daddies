@@ -13,35 +13,42 @@ $(function () {
     function insertDoc(data, tabletop) {
         // main build object
         var build = {
-            banner: function () {
-                var json = data.banner.elements;
-            },
-            repairs: function () {
-                var json = data.repairs.elements;
-            },
-            featured: function () {
-                var json = data.featured.elements;
-            },
-            countdown: function () {
-                var json = data.countdown.elements;
-            },
-            promo: function () {
-                var json = data.promo.elements;
-            },
-            blog: function () {
-                var json = data.blog.elements;
-            },
-            all: function(){
-                // build all sections
-                build.banner();
-                build.repairs();
-                build.featured();
-                build.countdown();
-                build.promo();
-                build.blog();
+                banner: function () {
+                    var banners = data.banner.elements;
+                    $.each(banners, function (x, banner) {
+                        $('img#banner-image-' + (x + 1)).attr('src', banner.image);
+                        $('h1#banner-title-' + (x + 1)).text(banner.title);
+                        $('p#banner-desc-' + (x + 1)).text(banner.description);
+                        $('a#banner-link-' + (x + 1)).attr('href', banner.link);
+                        $('span#banner-button-' + (x + 1)).text(banner.button);
+                    });
+                },
+                repairs: function () {
+                    var json = data.repairs.elements;
+                },
+                featured: function () {
+                    var json = data.featured.elements;
+                },
+                countdown: function () {
+                    var json = data.countdown.elements;
+                },
+                promo: function () {
+                    var json = data.promo.elements;
+                },
+                blog: function () {
+                    var json = data.blog.elements;
+                },
+                all: function () {
+                    // build all sections
+                    build.banner();
+                    build.repairs();
+                    build.featured();
+                    build.countdown();
+                    build.promo();
+                    build.blog();
+                }
             }
-        }
-        // init build 
+            // init build 
         build.all();
     }
 });
