@@ -24,10 +24,6 @@ $(function () {
                     });
                 },
                 repairs: function () {
-                    var json = data.repairs.elements;
-                    var json = data.banner.elements;
-                },
-                repairs: function () {
                     var phones = data.repairs.elements;
                     $.each(phones, function (x, phone) {
                     });
@@ -42,7 +38,14 @@ $(function () {
                     var json = data.promo.elements;
                 },
                 blog: function () {
-                    var json = data.blog.elements;
+                    var blogs = data.blog.elements;
+                    $.each(blogs, function (x, blog) {
+                        $('img#blog-image-' + (x + 1)).attr('src', blog.image);
+                        $('h5#blog-title-' + (x + 1)).text(blog.title);
+                        $('p#blog-desc-' + (x + 1)).text(blog.description);
+                        $('a#blog-link-' + (x + 1)).attr('href', blog.link);
+                        console.log(blog);
+                    });
                 },
                 all: function () {
                     // build all sections

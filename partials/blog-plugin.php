@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-left mb-40">
-                    <h2 class="uppercase">Latest blog</h2>
-                    <h6>There are many variations of passages of brands available,</h6>
+                    <h2 class="uppercase">Blogs</h2>
+                    <h6>Read More About Us</h6>
                 </div>
             </div>
         </div>
@@ -13,24 +13,13 @@
                 <!-- blog-item start -->
                 <div class="col-xs-12">
                     <div class="blog-item">
-                        <img src="img/blog/1.jpg" alt="">
+                        <img id="blog-image-1" src="" alt="">
                         <div class="blog-desc">
-                            <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
-                            <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
+                            <h5 id="blog-title-1" class="blog-title"><a href="single-blog.html">loading</a></h5>
+                            <p id="blog-desc-1">loading...</p>
                             <div class="read-more">
-                                <a href="single-blog.html">Read more</a>
+                                <a id="blog-link-1" href="#"> Read More</a>
                             </div>
-                            <ul class="blog-meta">
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-favorite"></i>89 Like</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-comments"></i>59 Comments</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-share"></i>29 Share</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -38,24 +27,13 @@
                 <!-- blog-item start -->
                 <div class="col-xs-12">
                     <div class="blog-item">
-                        <img src="img/blog/2.jpg" alt="">
+                        <img id="blog-image-2" src="" alt="">
                         <div class="blog-desc">
-                            <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
-                            <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
+                            <h5 id="blog-title-2" class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
+                            <p id="blog-desc-2">loading... </p>
                             <div class="read-more">
-                                <a href="single-blog.html">Read more</a>
+                                <a id="blog-link-2" href="#">Read more</a>
                             </div>
-                            <ul class="blog-meta">
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-favorite"></i>89 Like</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-comments"></i>59 Comments</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-share"></i>29 Share</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -63,49 +41,13 @@
                 <!-- blog-item start -->
                 <div class="col-xs-12">
                     <div class="blog-item">
-                        <img src="img/blog/3.jpg" alt="">
+                        <img id="blog-image-3" src="" alt="">
                         <div class="blog-desc">
-                            <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
-                            <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
+                            <h5 id="blog-title-3" class="blog-title"><a href="#">loading... </a></h5>
+                            <p id="blog-desc-3">loading...</p>
                             <div class="read-more">
-                                <a href="single-blog.html">Read more</a>
+                                <a id="blog-link-3" href="#">Read more</a>
                             </div>
-                            <ul class="blog-meta">
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-favorite"></i>89 Like</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-comments"></i>59 Comments</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-share"></i>29 Share</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- blog-item end -->
-                <!-- blog-item start -->
-                <div class="col-xs-12">
-                    <div class="blog-item">
-                        <img src="img/blog/1.jpg" alt="">
-                        <div class="blog-desc">
-                            <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
-                            <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
-                            <div class="read-more">
-                                <a href="single-blog.html">Read more</a>
-                            </div>
-                            <ul class="blog-meta">
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-favorite"></i>89 Like</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-comments"></i>59 Comments</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="zmdi zmdi-share"></i>29 Share</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
