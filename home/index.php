@@ -32,6 +32,9 @@
         // all of the js includes
         require_once('../partials/js-includes.php'); 
     ?>
+    
+    <!-- homepage app -->
+    <script src="../js/homepage.js"></script>
 
 </body>
 

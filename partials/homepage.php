@@ -8,6 +8,7 @@
 <section id="page-content" class="page-wrapper">
 
     <?php
+        /* include all the plugins */
         require_once('../partials/repair-plugin.php');
         require_once('../partials/featured-plugin.php');
         require_once('../partials/promo-plugin.php');
