@@ -55,20 +55,12 @@
     background: #3B5998;
 }
 
-.google-plus:hover {
-    background: #DD493D;
-}
-
 .twitter:hover {
     background: #1DA1F2;
 }
 
-.rss:hover {
-    background: #F36F24;
-}
-
-.pinterest:hover {
-    background: #cb2027 none repeat scroll 0 0;
+.instagram:hover {
+    background: brown;
 }
 
 .footer-title {
