@@ -14,6 +14,7 @@ $(function () {
         // main build object
         var build = {
                 banner: function () {
+<<<<<<< Updated upstream
                     var banners = data.banner.elements;
                     $.each(banners, function (x, banner) {
                         $('img#banner-image-' + (x + 1)).attr('src', banner.image);
@@ -25,6 +26,21 @@ $(function () {
                 },
                 repairs: function () {
                     var json = data.repairs.elements;
+=======
+                    var json = data.banner.elements;
+                },
+                repairs: function () {
+                    var phones = data.repairs.elements;
+                    $.each(phones, function (x, phone) {
+                        var html = '<div class="col-xs-12">' +
+                            '<div class="single-brand-product">' +
+                            '<a href="single-product.html"><img src="img/product/5.jpg" alt=""></a>' +
+                            '<h3 class="brand-title text-gray">' +
+                            '<a href="#">Brand name</a>' +
+                            '</h3></div></div>';
+                        $('div#phone-repairs').append(html);
+                    });
+>>>>>>> Stashed changes
                 },
                 featured: function () {
                     var json = data.featured.elements;
