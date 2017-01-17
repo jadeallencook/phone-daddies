@@ -35,6 +35,7 @@
     
     <!-- homepage app -->
     <script src="../js/homepage.js"></script>
+    <script src="../js/homepage-store.js"></script>
 
 </body>
 

@@ -18,7 +18,7 @@
                             <h5 id="blog-title-1" class="blog-title"><a href="single-blog.html">loading</a></h5>
                             <p id="blog-desc-1">loading...</p>
                             <div class="read-more">
-                                <a id="blog-link-1" href="#"> Read More</a>
+                                <a id="blog-link-1" target="_blank" href="#"> Read More</a>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                             <h5 id="blog-title-2" class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
                             <p id="blog-desc-2">loading... </p>
                             <div class="read-more">
-                                <a id="blog-link-2" href="#">Read more</a>
+                                <a id="blog-link-2" target="_blank" href="#">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                             <h5 id="blog-title-3" class="blog-title"><a href="#">loading... </a></h5>
                             <p id="blog-desc-3">loading...</p>
                             <div class="read-more">
-                                <a id="blog-link-3" href="#">Read more</a>
+                                <a id="blog-link-3" target="_blank" href="#">Read more</a>
                             </div>
                         </div>
                     </div>

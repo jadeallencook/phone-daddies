@@ -46,7 +46,6 @@ $(function () {
                         $('h5#blog-title-' + (x + 1)).text(blog.title);
                         $('p#blog-desc-' + (x + 1)).text(blog.description);
                         $('a#blog-link-' + (x + 1)).attr('href', blog.link);
-                        console.log(blog);
                     });
                 },
                 all: function () {
