@@ -1,6 +1,6 @@
 $(function () {
     // cache sheet info
-    var sheetURL = 'https://docs.google.com/spreadsheets/d/1fW6oNMdGDy1_K7UckTKTc1Ve2CNqcwvn3Q8-kWnVR4Q/pubhtml';
+    let sheetURL = 'https://docs.google.com/spreadsheets/d/1fW6oNMdGDy1_K7UckTKTc1Ve2CNqcwvn3Q8-kWnVR4Q/pubhtml';
     // using tabletop to get gDoc
     Tabletop.init({
         key: sheetURL,
@@ -10,10 +10,10 @@ $(function () {
 
     // main build function after sheet loads
     function insertDoc(data, tabletop) {
+        // cache all store items 
         var database = data.database.elements;
-
+        // html build for product
         function buildItem(storeItem) {
-            console.log(storeItem);
             var html = '<div class="col-md-3 col-sm-4 col-xs-12"><div class="product-item"><div class="product-img">' +
                 '<a href="single-product.html">' +
                 '<img src="' + storeItem['pic-1'] + '" alt="" />' +
@@ -21,7 +21,7 @@ $(function () {
                 '<div class="product-info">' +
                 '<h6 class="product-title">' +
                 '<a href="single-product.html">' + storeItem.title + '</a>' +
-                '</h6>' + 
+                '</h6>' +
                 '<div class="pro-rating">' +
                 '<a href="#"><i class="zmdi zmdi-star"></i></a>' +
                 '<a href="#"><i class="zmdi zmdi-star"></i></a>' +
@@ -42,9 +42,21 @@ $(function () {
                 '</li></ul></div></div></div>';
             return html;
         }
-        for (var x = 0; x < 6; x++) {
-            $('div#products-list').append(buildItem(database[x]));
+        // cache settings 
+        let store = {
+            max: 8
         }
-
+        // start build
+        $.each(database, function(x, item){
+            if (x < store.max) {
+                $('div#products-list').append(buildItem(item));
+            }
+            if (item.front === 'TRUE') {
+                // $('div#featured-products').append(buildItem[item]);
+            }
+        });
+        for (var x = 0; x < 8; x++) {
+            //$('div#products-list').append(buildItem(database[x]));
+        }
     }
 });
