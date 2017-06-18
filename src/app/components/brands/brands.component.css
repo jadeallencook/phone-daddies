@@ -5,7 +5,8 @@
   display: block;
 }
 .single-brand-product img {
-  width: 100%;
+  height: 100px;
+  vertical-align: top;
 }
 .single-brand-product .brand-title {
   bottom: 15px;

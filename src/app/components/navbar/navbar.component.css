@@ -12,7 +12,7 @@
    position: relative;
 }
 .main-menu > li > a::before, .dropdwn li a:before, .single-mega-item li a:before {
-  background: #ffbf7f none repeat scroll 0 0;
+  background: #4CAF50 none repeat scroll 0 0;
   bottom: 0;
   content: "";
   height: 1px;
@@ -36,13 +36,13 @@
   transition: all 0.3s ease 0s;
 }
 .main-menu > li:hover > a{
-  color: #FF7F00;
+  color: #4CAF50;
 }
 .dropdwn > li:hover > a{
-  color: #ff7f00;
+  color: #4CAF50;
 }
 .single-mega-item > li:hover > a{
-  color: #ff7f00;
+  color: #4CAF50;
 }
 /*dropdwn Style*/
 .dropdwn {
@@ -189,7 +189,7 @@
   padding: 22px 0;
 }
  .sticky .main-menu > li:hover > a{
-  color: #FF7F00;
+  color: #4CAF50;
  }
 
 .logo {
@@ -377,7 +377,7 @@
   text-align: center;
 }
 .total-cart-in:hover .cart-toggler > a {
-  color: #ff7f00;
+  color: #4CAF50;
 }
 .cart-icon {
   font-size: 20px;
@@ -450,7 +450,7 @@
   z-index: 2;
 }
 .del-icon > a:hover > i {
-  color: #ff7f00;
+  color: #4CAF50;
 }
 .cart-info {
   padding: 10px 0 0 20px;
@@ -475,7 +475,7 @@
   font-weight: 700;
 }
 .top-cart-inner.subtotal span {
-  color: #ff7f00;
+  color: #4CAF50;
 }
 .top-cart-inner.view-cart h4, .top-cart-inner.check-out h4 {
   color: #666;
@@ -539,7 +539,7 @@
   line-height: 20px;
 }
 .user-meta > li > ul > li > a:hover {
-  color: #FF7F00;
+  color: #4CAF50;
 }
 .user-meta > li:hover > ul {
   opacity: 1;
@@ -605,7 +605,7 @@
   width: 100%;
 }
 .dropdwn > li .dropdwn-repeat li:hover > a {
-  color: #ff7f00;
+  color: #4CAF50;
 }
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {

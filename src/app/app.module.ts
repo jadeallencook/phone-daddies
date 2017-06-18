@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PromoComponent } from './components/promo/promo.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { GoogleFormComponent } from './pages/google-form/google-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     FooterComponent,
     HomepageComponent,
     PromoComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DashboardComponent,
+    GoogleFormComponent
   ],
   imports: [
     BrowserModule,
@@ -49,4 +53,6 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+}

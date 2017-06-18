@@ -52,8 +52,9 @@
   position: absolute;
   top: 35%;
 }
+div.banner-info h3,
 .banner-featured-list li {
-  color: #666666;
+  color: #eee;
 }
 .banner-featured-list li i {
   margin-right: 10px;

@@ -13,8 +13,8 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
   }
 
-  ngAfterContentInit() {
-    // activate component js 
+  ngAfterViewInit() {
+    // activate component js
     activateTheme();
   }
 
