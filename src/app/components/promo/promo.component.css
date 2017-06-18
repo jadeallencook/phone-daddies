@@ -1,0 +1,60 @@
+.up-comming-pro {}
+.up-comming-pro-img {
+  width: 47.3%;
+}
+.up-comming-pro-img img {
+  width: 100%;
+}
+.up-comming-pro-info {
+  padding: 0 30px;
+  width: 52.7%;
+}
+.up-comming-pro-info h3 {
+  color: #575757;
+  font-weight: 600;
+  margin: 45px 0 20px;
+}
+.up-comming-pro-info > p {
+  margin-bottom: 40px;
+}
+
+.banner {}
+.banner-item {
+  position: relative;
+}
+.banner-1::before {
+  background: rgba(0, 0, 0, 0) url("/assets/img/bg/ribbon.png") repeat scroll 0 0;
+  content: "";
+  height: 137px;
+  left: -11px;
+  position: absolute;
+  top: -11px;
+  width: 146px;
+}
+.ribbon-price {
+  left: 15px;
+  position: absolute;
+  top: 30px;
+  transform: rotate(-42deg);
+}
+.ribbon-price span {
+  color: #fefefe;
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.banner-img img {
+  width: 100%;
+}
+.banner-info {
+  left: 30px;
+  position: absolute;
+  top: 35%;
+}
+.banner-featured-list li {
+  color: #666666;
+}
+.banner-featured-list li i {
+  margin-right: 10px;
+}

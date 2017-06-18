@@ -1,0 +1,15 @@
+.single-brand-product {
+  position: relative;
+}
+.single-brand-product > a {
+  display: block;
+}
+.single-brand-product img {
+  width: 100%;
+}
+.single-brand-product .brand-title {
+  bottom: 15px;
+  margin: 0;
+  position: absolute;
+  right: 20px;
+}
