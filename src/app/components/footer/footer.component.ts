@@ -7,7 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  currentYear = new Date().getFullYear();
+  links = [
+    {
+      text: 'Repair',
+      link: '/form/repair'
+    }, {
+      text: 'Sell',
+      link: '/form/sell'
+    }, {
+      text: 'Account',
+      link: '/dash'
+    }, {
+      text: 'Contact',
+      link: '/form/repair'
+    },
+  ];
 
   ngOnInit() {
 

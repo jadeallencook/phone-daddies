@@ -7,17 +7,17 @@
 
           <!-- banner loop -->
           <div *ngFor="let banner of banners; let x = index" class="col-md-12">
-            <div class="layer-{{x + 1}}">
+            <div class="layer-{{x + 1}} layers">
               <div class="slider-img">
                 <img src="{{banner.image}}" alt="{{banner.alt}}">
               </div>
               <div class="slider-info gray-bg">
                 <div class="slider-info-inner">
-                  <h1 class="slider-title-{{x + 1}} text-uppercase text-black-1">{{banner.title}}</h1>
+                  <h1 class="slider-title-1 text-uppercase text-black-1">{{banner.title}}</h1>
                   <div class="slider-brief text-black-2">
                     <p>{{banner.body}}</p>
                   </div>
-                  <a href="{{banner.link}}" class="button extra-small button-black">
+                  <a routerLink="{{banner.link}}" class="banner-btn button extra-small button-black">
                     <span class="text-uppercase">{{banner.btn}}</span>
                   </a>
                 </div>

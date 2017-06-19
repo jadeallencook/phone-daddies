@@ -47,17 +47,8 @@
           <div class="col-md-10 col-sm-6 col-xs-12">
             <nav id="primary-menu">
               <ul class="main-menu text-right">
-                <li>
-                  <a routerLink="/repair">Repair</a>
-                </li>
-                <li>
-                  <a routerLink="/sell">Sell</a>
-                </li>
-                <li>
-                  <a routerLink="/dash">Account</a>
-                </li>
-                <li>
-                  <a routerLink="/contact">Contact</a>
+                <li *ngFor="let link of links">
+                  <a routerLink="{{link.link}}">{{link.text}}</a>
                 </li>
               </ul>
             </nav>
@@ -77,17 +68,8 @@
         <div class="mobile-menu">
           <nav id="dropdown">
             <ul>
-              <li>
-                <a routerLink="/repair">Repair</a>
-              </li>
-              <li>
-                <a routerLink="/sell">Sell</a>
-              </li>
-              <li>
-                <a routerLink="/dash">Account</a>
-              </li>
-              <li>
-                <a routerLink="/contact">Contact</a>
+              <li *ngFor="let link of links">
+                <a routerLink="{{link.link}}">{{link.text}}</a>
               </li>
             </ul>
           </nav>

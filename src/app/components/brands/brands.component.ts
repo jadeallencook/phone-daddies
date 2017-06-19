@@ -10,52 +10,40 @@ export class BrandsComponent implements OnInit {
   phones = [
     {
       image: "google-pixel-Section-Fixez.png",
-      brand: "Google",
-      link: "/repair"
+      brand: "Google"
     }, {
       image: "menu-htc_4.png",
-      brand: "HTC",
-      link: "/repair"
+      brand: "HTC"
     }, {
       image: "menu-ipad_7.png",
-      brand: "iPad",
-      link: "/repair"
+      brand: "iPad"
     }, {
       image: "menu-iphone_7.png",
-      brand: "iPhone",
-      link: "/repair"
+      brand: "iPhone"
     }, {
       image: "menu-ipod.png",
-      brand: "iPod",
-      link: "/repair"
+      brand: "iPod"
     }, {
       image: "menu-lg_7.png",
-      brand: "LG",
-      link: "/repair"
+      brand: "LG"
     }, {
       image: "menu-motorola_4.png",
-      brand: "Motorola",
-      link: "/repair"
+      brand: "Motorola"
     }, {
       image: "menu-nokia_4.png",
-      brand: "Nokia",
-      link: "/repair"
+      brand: "Nokia"
     }, {
       image: "menu-samsung-white_4.png",
-      brand: "Samsung",
-      link: "/repair"
+      brand: "Samsung"
     }, {
       image: "menu-tablet_4.png",
-      brand: "Tablets",
-      link: "/repair"
+      brand: "Tablets"
     }, {
       image: "oneplus-one-64.png",
-      brand: "One",
-      link: "/repair"
+      brand: "One"
     }, {
       image: "sony-xperia-z3-section.png",
-      brand: "Sony",
-      link: "/repair"
+      brand: "Sony"
     },
   ];
 

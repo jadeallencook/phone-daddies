@@ -5,7 +5,7 @@
       <div class="plr-185">
         <div class="footer-top-inner gray-bg">
           <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="col-lg-8 col-md-8 col-sm-12">
               <div class="single-footer footer-about">
                 <div class="footer-logo">
                   <img src="assets/img/logo/logo.png" alt="Phone Repair Logo" class="big-logo">
@@ -16,16 +16,13 @@
                 </div>
                 <ul class="footer-social">
                   <li>
-                    <a class="facebook" href="assets/" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
+                    <a class="facebook" href="https://www.facebook.com/phonedaddies/" target="_blank" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
                   </li>
                   <li>
-                    <a class="google-plus" href="assets/" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a>
+                    <a class="google-plus" href="https://www.instagram.com/phonedaddies/" target="_blank" title="Instagram"><i class="zmdi zmdi-instagram"></i></a>
                   </li>
                   <li>
-                    <a class="twitter" href="assets/" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a class="rss" href="assets/" title="RSS"><i class="zmdi zmdi-rss"></i></a>
+                    <a class="twitter" href="https://twitter.com/phonedaddies" target="_blank" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
                   </li>
                 </ul>
               </div>
@@ -34,8 +31,8 @@
               <div class="single-footer">
                 <h4 class="footer-title border-left">Need Help?</h4>
                 <ul class="footer-menu">
-                  <li>
-                    <a href="assets/my-account.html"><i class="zmdi zmdi-circle"></i><span>My Account</span></a>
+                  <li *ngFor="let link of links">
+                    <a routerLink="{{link.link}}"><i class="zmdi zmdi-circle"></i><span>{{link.text}}</span></a>
                   </li>
 
                 </ul>
@@ -53,7 +50,7 @@
           <div class="row">
             <div class="col-sm-6 col-xs-12">
               <div class="copyright-text">
-                <p>Theme by <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank">CodeCarnival</a> | Developed by <a href="#">Jade Allen Cook</a> | 2015 - {{ currentYear }}</p>
+                <p>Theme by <a href="https://themeforest.net/user/codecarnival/portfolio" target="_blank">CodeCarnival</a> | Developed by <a href="#">Jade Allen Cook</a></p>
               </div>
             </div>
             <div class="col-sm-6 col-xs-12">

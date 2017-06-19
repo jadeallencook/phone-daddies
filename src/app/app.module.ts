@@ -42,6 +42,18 @@ import { GoogleFormComponent } from './pages/google-form/google-form.component';
         path: '',
         component: HomepageComponent
       }, {
+        path: 'home',
+        component: HomepageComponent
+      }, {
+        path: 'form/:formID',
+        component: GoogleFormComponent,
+        data: {
+          type: 'edit'
+        }
+      }, {
+        path: 'dash',
+        component: DashboardComponent
+      }, {
         path: '404',
         component: PageNotFoundComponent
       }, {
@@ -50,9 +62,10 @@ import { GoogleFormComponent } from './pages/google-form/google-form.component';
       }
     ])
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
-  bootstrap: [AppComponent]
+  providers: [{ provide: APP_BASE_HREF, useValue: '/#' }],
+  bootstrap: [AppComponent],
 })
+
 export class AppModule {
-  
+
 }
