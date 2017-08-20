@@ -1,0 +1,18 @@
+div#signup-form, div#login-success-panel {
+  margin: 25px auto;
+  width: 500px;
+  padding: 10% 0px 22% 0px;
+  text-align: center;
+}
+
+div#signup-form button {
+  width: 40%;
+}
+
+div#signup-form p {
+  font-weight: 100;
+}
+
+div#signup-form p#error-message {
+  color: red;
+}

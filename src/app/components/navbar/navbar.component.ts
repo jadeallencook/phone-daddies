@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseAuthService } from '../../services/firebase-auth.service'
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
+  providers: []
 })
 export class NavbarComponent implements OnInit {
 
+  // links for navbar
   links = [
     {
       text: 'Repair',
@@ -20,12 +23,12 @@ export class NavbarComponent implements OnInit {
     }, {
       text: 'Contact',
       link: '/form/repair'
-    },
+    }
   ];
-  
-  constructor() { }
+
+  constructor(private FirebaseAuthService: FirebaseAuthService) {}
 
   ngOnInit() {
-  }
 
+  }
 }

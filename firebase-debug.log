@@ -1,0 +1,43 @@
+[debug] [2017-08-13T05:14:00.778Z] ----------------------------------------------------------------------
+[debug] [2017-08-13T05:14:00.780Z] Command:       /usr/local/Cellar/node/7.0.0/bin/node /usr/local/bin/firebase serve
+[debug] [2017-08-13T05:14:00.780Z] CLI Version:   3.9.2
+[debug] [2017-08-13T05:14:00.780Z] Platform:      darwin
+[debug] [2017-08-13T05:14:00.780Z] Node Version:  v7.0.0
+[debug] [2017-08-13T05:14:00.781Z] Time:          Sat Aug 12 2017 23:14:00 GMT-0600 (MDT)
+[debug] [2017-08-13T05:14:00.781Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-13T05:14:00.789Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-13T05:14:00.789Z] > authorizing via signed-in user
+[debug] [2017-08-13T05:14:00.791Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-13T05:14:00.791Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/KcADAu6IZn1-BGxseTQ9mUEzVY_TCADpOJOLtWKO61tQQ2jaFK1Q3-ALkCcSXeDW',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Aug 12 2017 23:14:00 GMT-0600 (MDT)
+[debug] [2017-08-13T05:14:01.092Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-13T05:14:01.095Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/phone-daddies  
+ Sat Aug 12 2017 23:14:01 GMT-0600 (MDT)
+[debug] [2017-08-13T05:14:02.063Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-13T05:14:02.064Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/phone-daddies/tokens  
+ Sat Aug 12 2017 23:14:02 GMT-0600 (MDT)
+[debug] [2017-08-13T05:14:02.675Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Applications/XAMPP/xamppfiles/htdocs/github/Phone-Daddies'...
+[info] 
+[debug] [2017-08-13T05:14:02.679Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/phone-daddies  
+ Sat Aug 12 2017 23:14:02 GMT-0600 (MDT)
+[debug] [2017-08-13T05:14:03.226Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-13T05:14:03.227Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/31384381014/clients/_:getWebAppConfig  
+ Sat Aug 12 2017 23:14:03 GMT-0600 (MDT)
+[debug] [2017-08-13T05:14:03.803Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-13T05:14:03.825Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:17)
+    at Server.g (events.js:291:16)
+    at emitNone (events.js:86:13)
+    at Server.emit (events.js:185:7)
+    at emitListeningNT (net.js:1288:10)
+    at _combinedTickCallback (internal/process/next_tick.js:71:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[error] 
+[error] Error: An unexpected error has occurred.

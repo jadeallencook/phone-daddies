@@ -1,3 +1,4 @@
+// app modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -5,6 +6,13 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 
+// firebase via angularfire2
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
+
+// components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
@@ -17,6 +25,10 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { GoogleFormComponent } from './pages/google-form/google-form.component';
+import { LoginComponent } from './components/login/login.component';
+
+// services
+import { FirebaseAuthService } from './services/firebase-auth.service';
 
 @NgModule({
   declarations: [
@@ -31,12 +43,16 @@ import { GoogleFormComponent } from './pages/google-form/google-form.component';
     PromoComponent,
     PageNotFoundComponent,
     DashboardComponent,
-    GoogleFormComponent
+    GoogleFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    AngularFireModule.initializeApp(environment.firebaseConfigData),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -54,6 +70,9 @@ import { GoogleFormComponent } from './pages/google-form/google-form.component';
         path: 'dash',
         component: DashboardComponent
       }, {
+        path: 'login',
+        component: LoginComponent
+      }, {
         path: '404',
         component: PageNotFoundComponent
       }, {
@@ -62,10 +81,15 @@ import { GoogleFormComponent } from './pages/google-form/google-form.component';
       }
     ])
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/#' }],
+  providers: [
+    {
+      provide: APP_BASE_HREF,
+      useValue: '/#'
+    },
+    FirebaseAuthService
+  ],
   bootstrap: [AppComponent],
 })
 
 export class AppModule {
-
 }

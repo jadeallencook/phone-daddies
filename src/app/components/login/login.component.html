@@ -1,0 +1,18 @@
+<!-- !ActiveUser -->
+<div id="signup-form" *ngIf="!this.FirebaseAuthService.ActiveUser">
+  <h1>Login</h1>
+  <p>We Buy Used Phones & Broken Screens</p>
+  <br />
+  <input placeholder="user@example.com" type="text" [(ngModel)]="email">
+  <input placeholder="password" type="password" [(ngModel)]="password">
+  <p id="error-message"></p>
+  <button (click)="this.FirebaseAuthService.login(this.email, this.password)" class="btn btn-primary">Login</button>
+  <button (click)="this.FirebaseAuthService.createAccount(this.email, this.password)" class="btn btn-default">Sign Up</button>
+</div>
+
+<!-- ActiveUser -->
+<div id="login-success-panel" *ngIf="this.FirebaseAuthService.ActiveUser">
+  <h1>Success!</h1><br /><br />
+  <button class="btn btn-primary" routerLink="/dash">Dashboard</button>
+  <button (click)="this.FirebaseAuthService.logout()" class="btn btn-default">Sign Out</button>
+</div>

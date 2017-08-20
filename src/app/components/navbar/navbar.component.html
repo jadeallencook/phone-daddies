@@ -11,7 +11,8 @@
         </div>
         <div class="col-sm-6 col-xs-12">
           <div class="top-link clearfix">
-            <ul class="link f-right">
+            <!-- if user is logged in -->
+            <ul *ngIf="this.FirebaseAuthService.ActiveUser" class="link f-right">
               <li>
                 <a routerLink="/dash">
                   <i class="zmdi zmdi-account"></i>
@@ -19,8 +20,17 @@
                 </a>
               </li>
               <li>
-                <a routerLink="/dash">
+                <a (click)="this.FirebaseAuthService.logout()">
                   <i class="zmdi zmdi-lock"></i>
+                  Sign Out
+                </a>
+              </li>
+            </ul>
+            <!-- if user is logged out -->
+            <ul *ngIf="!this.FirebaseAuthService.ActiveUser" class="link f-right">
+              <li>
+                <a routerLink="/login">
+                  <i class="zmdi zmdi-account"></i>
                   Login
                 </a>
               </li>
