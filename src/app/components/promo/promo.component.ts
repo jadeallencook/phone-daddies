@@ -9,7 +9,10 @@ export class PromoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  ngAfterViewInit() {
+    
   }
 
 }

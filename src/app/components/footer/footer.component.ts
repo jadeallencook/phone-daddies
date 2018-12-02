@@ -15,12 +15,9 @@ export class FooterComponent implements OnInit {
       text: 'Sell',
       link: '/form/sell'
     }, {
-      text: 'Account',
+      text: 'Become A Phone Daddy',
       link: '/dash'
-    }, {
-      text: 'Contact',
-      link: '/form/repair'
-    },
+    }
   ];
 
   ngOnInit() {

@@ -6,11 +6,9 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 
-// firebase via angularfire2
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+// firebase
 import { environment } from '../environments/environment';
+import * as firebase from 'firebase';
 
 // components
 import { AppComponent } from './app.component';
@@ -50,9 +48,6 @@ import { FirebaseAuthService } from './services/firebase-auth.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(environment.firebaseConfigData),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -92,4 +87,7 @@ import { FirebaseAuthService } from './services/firebase-auth.service';
 })
 
 export class AppModule {
+  constructor() {
+    firebase.initializeApp(environment.firebaseConfigData)
+  }
 }

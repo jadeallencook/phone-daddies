@@ -10,5 +10,11 @@ import { Observable } from 'rxjs/Rx';
 })
 
 export class AppComponent {
+  constructor() {}
 
+  ngDoCheck() {
+    if (window.location.hash.includes('#/#') || window.location.hash === '#/') {
+      window.location.hash = '';
+    }
+  }
 }
