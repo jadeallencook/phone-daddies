@@ -1,0 +1,31 @@
+h2 {
+    cursor: pointer;
+}
+
+table {
+    color: #000;
+    text-transform: capitalize;
+}
+
+table > tbody > tr {
+    cursor: pointer;
+}
+
+table > tbody > tr:hover {
+    opacity: 0.5;
+}
+
+input,
+select {
+    margin: 0px 15px 0px 0px;
+    text-transform: capitalize;
+}
+
+form button {
+    float: right;
+    margin-top: 5px;
+}
+
+form {
+    margin-bottom: 15px;
+}

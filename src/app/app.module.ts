@@ -27,6 +27,11 @@ import { LoginComponent } from './components/login/login.component';
 
 // services
 import { FirebaseAuthService } from './services/firebase-auth.service';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminHoursComponent } from './components/admin-hours/admin-hours.component';
+import { AdminLocationsComponent } from './components/admin-locations/admin-locations.component';
+import { AdminPricesComponent } from './components/admin-prices/admin-prices.component';
+import { AdminUnavailableComponent } from './components/admin-unavailable/admin-unavailable.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +47,12 @@ import { FirebaseAuthService } from './services/firebase-auth.service';
     PageNotFoundComponent,
     DashboardComponent,
     GoogleFormComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent,
+    AdminHoursComponent,
+    AdminLocationsComponent,
+    AdminPricesComponent,
+    AdminUnavailableComponent
   ],
   imports: [
     BrowserModule,

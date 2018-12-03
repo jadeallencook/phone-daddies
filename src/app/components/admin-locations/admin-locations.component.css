@@ -1,0 +1,21 @@
+h2 {
+    cursor: pointer;
+}
+
+table {
+    color: #000;
+}
+
+table td.delete {
+    color: #F00;
+    cursor: pointer;
+}
+
+form input {
+    margin-right: 15px;
+}
+
+form button {
+    float: right;
+    margin-top: 5px;
+}

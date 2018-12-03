@@ -1,0 +1,25 @@
+<h2 (click)="toggle = (toggle) ? false : true">Locations</h2>
+
+<form *ngIf="toggle" class="form-inline">
+  <input type="text" class="form-control" [(ngModel)]="location.name" name="name" placeholder="Location">
+  <input type="text" class="form-control" [(ngModel)]="location.address" name="address" placeholder="Address">
+  <button class="btn btn-default" *ngIf="!location.name || !location.address" disabled>Add</button>
+  <button class="btn btn-default" *ngIf="location.name && location.address" (click)="addLocation()">Add</button>
+</form>
+
+<table *ngIf="toggle" class="table">
+    <thead>
+      <tr>
+        <th scope="col">Location</th>
+        <th scope="col">Address</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let locationObj of locations">
+        <th scope="row">{{ locationObj.name }}</th>
+        <td>{{ locationObj.address }}</td>
+        <td class="delete" (click)="deleteLocation(locationObj.uid)">Delete</td>
+      </tr>
+    </tbody>
+  </table>

@@ -12,5 +12,13 @@ export const environment = {
     projectId: "phone-daddies",
     storageBucket: "phone-daddies.appspot.com",
     messagingSenderId: "31384381014"
+  },
+  auth: ['jadeallencook@gmail.com', 'erickwhitford@gmail.com'],
+  phones: {
+    makes: ['iphone', 'samsung'],
+    models: {
+      iphone: ['xs', 'x', '8+', '8', '7+', '7'],
+      samsung: ['galaxy']
+    }
   }
 };

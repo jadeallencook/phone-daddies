@@ -1,13 +1,18 @@
 <!-- ActiveUser -->
-<div class="dashboard-wrapper" *ngIf="this.FirebaseAuthService.ActiveUser">
-    <h1>Dashboard</h1>
-    <p>Thanks for creating your account! Although our authentication process is up and running, our dashboard is still under construction. We are currently working on making a seamless online process of buying broken phone screens and will contact you once everything is running!</p>
-    <p><b>{{ this.FirebaseAuthService.ActiveUser.email }}</b></p>
-    <button (click)="this.FirebaseAuthService.logout()" class="btn btn-default">Sign Out</button>
+<div class="dashboard-wrapper" *ngIf="this.FirebaseAuthService.ActiveUser && !admin">
+  <h1>Dashboard</h1>
+  <p>Thanks for creating your account! Although our authentication process is up and running, our dashboard is still
+    under construction. We are currently working on making a seamless online process of buying broken phone screens and
+    will contact you once everything is running!</p>
+  <p><b>{{ this.FirebaseAuthService.ActiveUser.email }}</b></p>
+  <button (click)="this.FirebaseAuthService.logout()" class="btn btn-default">Sign Out</button>
+</div>
+
+<div class="dashboard-wrapper" *ngIf="this.FirebaseAuthService.ActiveUser && admin">
+  <app-admin></app-admin>
 </div>
 
 <!-- !ActiveUser -->
 <div id="logged-out" class="dashboard-wrapper" *ngIf="!this.FirebaseAuthService.ActiveUser">
-    <h1>Looks like you're not logged in!</h1>
-    You can <a routerLink="/login">login here</a> or <a routerLink="/login">create an account</a>!
+  <app-login></app-login>
 </div>

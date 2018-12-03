@@ -1,0 +1,27 @@
+h2 {
+    cursor: pointer;
+}
+
+table {
+    color: #000;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+form input,
+form select {
+    margin-right: 15px;
+    min-width: 100px;
+}
+
+form button {
+    float: right;
+    margin-top: 5px;
+}
+
+table > tbody > tr:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

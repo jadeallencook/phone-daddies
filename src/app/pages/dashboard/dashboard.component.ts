@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FirebaseAuthService } from '../../services/firebase-auth.service'
+import { environment } from '../../../environments/environment';
+import { FirebaseAuthService } from '../../services/firebase-auth.service';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +10,14 @@ import { FirebaseAuthService } from '../../services/firebase-auth.service'
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private FirebaseAuthService: FirebaseAuthService) {}
+  admin: boolean = null;
+
+  constructor(private FirebaseAuthService: FirebaseAuthService) {
+    firebase.auth().onAuthStateChanged(() => {
+      this.admin = (environment.auth.includes(FirebaseAuthService.ActiveUser.email)) ? true : false;
+    })
+    this.admin = (environment.auth.includes(FirebaseAuthService.ActiveUser.email)) ? true : false;
+  }
 
   ngOnInit() {
 
